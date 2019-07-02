@@ -253,7 +253,7 @@ public class Gui extends javax.swing.JFrame {
     }//GEN-LAST:event_SuffixActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String convetrToStatic = converter.convetrToStatic(TInput.getText(), propertyList);
+        String convetrToStatic = converter.convetrToStatic(TInput.getText(), propertyList, Suffix.getText(), Prefix.getText());
         TOutput.setText(convetrToStatic);
         
         
@@ -277,7 +277,7 @@ public class Gui extends javax.swing.JFrame {
     }//GEN-LAST:event_Combo1ItemStateChanged
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        String toCamelCase = converter.toCamelCase(converter.convetrToStatic(TInput.getText(), propertyList));
+        String toCamelCase = converter.toCamelCase(TInput.getText(), propertyList, Suffix.getText(), Prefix.getText());
         TOutput.setText(toCamelCase);
     }//GEN-LAST:event_jButton2ActionPerformed
 
