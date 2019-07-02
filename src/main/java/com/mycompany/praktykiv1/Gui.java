@@ -257,6 +257,7 @@ public class Gui extends javax.swing.JFrame {
         TOutput.setText(convetrToStatic);
         
         
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C2ActionPerformed
@@ -290,6 +291,7 @@ public class Gui extends javax.swing.JFrame {
 
     private void C3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C3ActionPerformed
         propertyList.addSafe(new AdditionalProperty("checkbox3", C1.isSelected(), Combo3.getSelectedItem().toString()));
+     
     }//GEN-LAST:event_C3ActionPerformed
 
     private void C4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C4ActionPerformed

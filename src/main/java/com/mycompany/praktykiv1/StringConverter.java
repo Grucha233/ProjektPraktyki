@@ -17,19 +17,24 @@ public class StringConverter {
             dashboard[i] = dashboard[i].trim().replaceAll(" ", "_").toUpperCase();
 
             String holder = "";
-            List<AdditionalProperty> filteredList = list.stream().filter(p -> p.getActive()).collect(Collectors.toList());
+            List<AdditionalProperty> filteredList = list.stream()
+                    .filter(p -> p.getActive())
+                    .sorted((o1, o2) -> o1.getKey().compareTo(o2.getKey()))
+                    .collect(Collectors.toList());
             for (AdditionalProperty property : filteredList) {
                 holder += property.getValue() + " ";
             }
             dashboard[i] = holder.trim() + " " + dashboard[i];
-
+            
         }
+        
         String out = "";
         StringBuilder strB = new StringBuilder(out);
         for (int i = 0; i < dashboard.length; i++) {
             strB.append(dashboard[i]);
             strB.append("\n");
         }
+        
         out = strB.toString();
 
         return out;
