@@ -103,13 +103,15 @@
                       <Component id="jScrollPane2" min="-2" pref="190" max="-2" attributes="0"/>
                       <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="C1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Combo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="C3" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="C4" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="Combo4" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="C2" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="C1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Combo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Component id="Combo3" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>

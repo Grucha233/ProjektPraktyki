@@ -22,14 +22,8 @@ public class StringConverter {
                 holder += property.getValue() + " ";
             }
             dashboard[i] = holder.trim() + " " + dashboard[i];
-//            System.out.println(dashboard[i]);
 
         }
-//       String out = "";
-//        
-//        for(int i=0; i<dashboard.length; i++){
-//            out += dashboard[i] + "\n";
-//        }
         String out = "";
         StringBuilder strB = new StringBuilder(out);
         for (int i = 0; i < dashboard.length; i++) {
@@ -42,20 +36,23 @@ public class StringConverter {
 
     }
 
-   public String toCamelCase(String text){
-   String[] parts = text.split("_");
-   String camelCaseString = "";
-   for (String part : parts){
-      camelCaseString = camelCaseString + toProperCase(part);
-   }
-   return camelCaseString;
-}
+    
+    
+    
+    public String toCamelCase(String out) {
+        String[] parts = out.split("_");
+        String camelCaseString = "";
+        for (String part : parts) {
+            camelCaseString = camelCaseString + toProperCase(part);
+        }
+        return camelCaseString;
+    }
 
-public String toProperCase(String text) {
-    return text.substring(0, 1).toUpperCase() +
-               text.substring(1).toLowerCase();
-}
-//zmiana dla gita
+    public String toProperCase(String out) {
+        return out.substring(0, 1).toUpperCase()
+                + out.substring(1).toLowerCase();
+    }
+
 }
 
 //PropertyList
